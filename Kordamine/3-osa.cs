@@ -38,7 +38,7 @@ namespace Kordamine
             Inimene noorim = inimesed.OrderBy(i => i.Vanus).First();
             return Tuple.Create(summa, keskmine_vanus, noorim, vanim);
         }
-        //7. Korrutustabel
+        
         public static int[,] Korrutustabel(int read, int veerud)
         {
             int[,] tabel = new int[read, veerud];
@@ -53,15 +53,15 @@ namespace Kordamine
             }
             return tabel;
         }
-        //8. Õpilastega mängimine
+        
         public static void Õpilastega_mängimine(string[] nimed)
         {
-            //Asendab kolmanda ja kuuenda õpilase nime (indeksite põhjal) uue nimega "Kati" ja "Mati".
+            
             Console.WriteLine("Uus nimi:");
             string nimi1 = Console.ReadLine();
             nimed[2] = nimi1;
             nimed[5] = "Mati";
-            //Kasutab while tsüklit, et tervitada ainult õpilasi, kelle nimi algab tähega "A".
+            
             int i = 0;
             while (i < nimed.Length)
             {
@@ -71,17 +71,17 @@ namespace Kordamine
                 }
                 i++;
             }
-            //Kasutab for tsüklit, et väljastada kõik nimed ja nende indeksid.
+            
             for (int j = 0; j < nimed.Length; j++)
             {
                 Console.WriteLine($"Indeks: {j}, Nimi: {nimed[j]}");
             }
-            //Kasutab foreach tsüklit, et väljastada kõik nimed väikeste tähtedena.
+            
             foreach (string nimi in nimed)
             {
                 Console.WriteLine(nimi.ToLower());
             }
-            //Kasutab do-while tsüklit, et tervitada õpilasi seni, kuni kohtab nime "Mati".
+            
             i = 0;
             do
             {
