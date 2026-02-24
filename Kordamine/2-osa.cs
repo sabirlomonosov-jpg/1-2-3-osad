@@ -1,5 +1,6 @@
 ﻿//1
 Console.WriteLine("Tere tulemast!");
+Console.Write("Sisesta eesnimi: ");
 string eesnimi = Console.ReadLine();
 Console.WriteLine("Tere, " + eesnimi);
 
@@ -137,7 +138,7 @@ string kategooria1 = "";
 
 Console.Write("Sisesta sugu (M/N): ");
 char sugu = Console.ReadLine()[0];
-if (sugu == 'M')
+if (sugu == 'm')
 {
     if (pikkusCm1 < 160)
     {
@@ -176,7 +177,7 @@ double saiprice = 1.0;
 double kokku = 0.0;
 Console.Write("Kas te tahate osta piima? (Y/N): ");
 char answer = Console.ReadLine()[0];
-if (answer == 'Y')
+if (answer == 'y')
 {
     kokku = kokku + piimprice;
 }
@@ -186,7 +187,7 @@ else
 }
 Console.Write("Kas te tahate osta leiba? (Y/N): ");
 answer = Console.ReadLine()[0];
-if (answer == 'Y')
+if (answer == 'y')
 {
     kokku = kokku + leibprice;
 }
@@ -196,7 +197,7 @@ else
 }
 Console.Write("Kas te tahate osta saia? (Y/N): ");
 answer = Console.ReadLine()[0];
-if (answer == 'Y')
+if (answer == 'y')
 {
     kokku = kokku + saiprice;
 }
