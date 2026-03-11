@@ -39,7 +39,7 @@ namespace Kordamine
                         _4_osa.RunAll();
                         break;
                     case "5":
-                        _4_osa.ShowMenu();
+                        _4_osa.ItaaliaToit();
                         break;
                     case "0":
                         Console.WriteLine("Väljun...");
