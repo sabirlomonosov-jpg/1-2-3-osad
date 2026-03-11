@@ -108,7 +108,7 @@ namespace Kordamine
             }
         }
 
-        // ------------------ Menuu (задание реализовано в этом классе) ------------------
+        
         public static void ShowMenu()
         {
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Menuu.txt");
