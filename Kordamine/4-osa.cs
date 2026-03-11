@@ -109,7 +109,7 @@ namespace Kordamine
         }
 
         
-        public static void ShowMenu()
+        public static void ItaaliaToit()
         {
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Menuu.txt");
 
@@ -177,7 +177,7 @@ namespace Kordamine
             }
         }
 
-        public static void RunMenu() => ShowMenu();
+        public static void RunMenu() => Itaaliatoit();
 
         
         public static void RunAll()
@@ -185,6 +185,7 @@ namespace Kordamine
             StreamWriter();
             StreamReader();
             RidadeLugemine();
+            ItaaliaToit();
                    
         }
     }
